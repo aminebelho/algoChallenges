@@ -1,4 +1,19 @@
-let array = [12, 54,25,48,47,36,29,10]
+let array = [12, 54,25,48,47,36,29,10,87]
+let array2 = [41, 54, 12, 10, 87]
+
+function same(x1, x2){
+    let x =[]
+    for( i = 0 ; i < x1.length ; i++){
+        for ( j = 0 ; j < x2.length ; j++){
+            if (x1[i] == x2[j]) {
+                x.push(x1[i])
+            }
+        }
+    }
+    console.log("same: ",x)
+}
+
+same(array, array2)
 
 function even(x) {
     let newArray = []
